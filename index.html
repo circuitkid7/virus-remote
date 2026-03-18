@@ -1,4 +1,6 @@
-#v81218#
+#v88#
 
-osascript -e "set volume output volume 100"
-open "https://www.youtube.com/watch?v=2aiGY74UStY"
+for ((i=0; i<=5; i++)); do
+    osascript -e "set volume output volume 100"
+    afplay /System/Library/Sounds/Submarine.aiff
+done
