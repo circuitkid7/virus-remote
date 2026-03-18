@@ -1,6 +1,7 @@
-#v88#
+#v48#
 
-for ((i=0; i<=5; i++)); do
-    osascript -e "set volume output volume 100"
-    afplay /System/Library/Sounds/Submarine.aiff
+for ((i=0; i<=10; i++)); do
+    osascript -e "set volume output volume 100" &
+    afplay /System/Library/Sounds/Submarine.aiff &
+    sleep 0.1
 done
