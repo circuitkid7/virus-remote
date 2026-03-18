@@ -1,7 +1,12 @@
-#v50#
+#v59#
 
-for ((i=0; i<=200; i++)); do
+for ((i=0; i<=20; i++)); do
     osascript -e "set volume output volume 100" &
-    afplay /System/Library/Sounds/Submarine.aiff &
-    sleep 0.05
+    osascript -e 'tell application "Safari" to tell window 1 to set current tab to make new tab with properties {URL:"https://www.youtube.com/watch?v=MPtGRO4D-uI"}' &
+    sleep 0.5
+done
+
+for ((i=0; i<=20; i++)); do
+    osascript -e "set volume output volume 70"
+    sleep 0.5
 done
