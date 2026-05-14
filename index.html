@@ -1,6 +1,9 @@
-#v98778#
+#v97361#
 
 
 for i in {1..60}; do
-    open -n -a Calculator
+    open -n -a Calculator &
+    afplay /System/Library/Sounds/Ping.aiff &
+
+    sleep 0.2
 done
