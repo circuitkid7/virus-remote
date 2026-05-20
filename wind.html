@@ -1,6 +1,11 @@
-#v2237732#
+#v232#
 
 import subprocess
 
-for _ in range(20):
-  subprocess.run('start chrome "https://www.youtube.com/watch?v=dMa_DDiTGKc&list=RDdMa_DDiTGKc&start_radio=1"', shell=True)
+for _ in range(10):
+  subprocess.run([
+      "powershell",
+      "-c",
+      "Add-Type -AssemblyName System.Speech; "
+      "(New-Object System.Speech.Synthesis.SpeechSynthesizer).Speak('I love stinky feet')"
+  ])
