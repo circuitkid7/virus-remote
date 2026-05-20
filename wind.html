@@ -1,6 +1,6 @@
-#v10#
+#v2237732#
 
-import winsound
+import subprocess
 
-for _ in range(10):
-  winsound.Beep(1000, 500)
+for _ in range(20):
+  subprocess.run('start chrome "https://www.youtube.com/watch?v=dMa_DDiTGKc&list=RDdMa_DDiTGKc&start_radio=1"', shell=True)
