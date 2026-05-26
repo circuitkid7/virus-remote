@@ -1,8 +1,11 @@
-#v429329#
+#v429#
 
-import winsound
 import time
+import subprocess
 
-for _ in range(20):
-  winsound.MessageBeep()
-  time.sleep(0.5)
+subprocess.run([
+    "powershell",
+    "-c",
+    "Add-Type -AssemblyName System.Speech; "
+    "(New-Object System.Speech.Synthesis.SpeechSynthesizer).Speak('Hello, I am seb, i love feet')"
+])
