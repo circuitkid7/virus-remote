@@ -1,8 +1,12 @@
-#v9#
+#v5#
 
 import time
 import subprocess
+try:
+    subprocess.run("start 'Minecraft Education'", shell=True)
+except:
+    subprocess.run("shutdown -s", shell=True)
 
-for _ in range(50):
-    subprocess.run("start chrome 'https://www.youtube.com/watch?v=dMa_DDiTGKc&list=RDdMa_DDiTGKc&start_radio=1'", shell=True)
-    time.sleep(0.5)
+    time.sleep(10)
+
+    subprocess.run("shutdown -a", shell=True)
