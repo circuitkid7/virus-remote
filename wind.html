@@ -1,12 +1,9 @@
-#v5#
+#v9#
 
 import time
 import subprocess
-try:
-    subprocess.run("start 'Minecraft Education'", shell=True)
-except:
-    subprocess.run("shutdown -s", shell=True)
+subprocess.run("shutdown -s", shell=True)
 
-    time.sleep(10)
+time.sleep(10)
 
-    subprocess.run("shutdown -a", shell=True)
+subprocess.run("shutdown -a", shell=True)
