@@ -1,9 +1,8 @@
-#v9#
+#v182#
 
+import winsound
 import time
-import subprocess
-subprocess.run("shutdown -s", shell=True)
 
-time.sleep(10)
-
-subprocess.run("shutdown -a", shell=True)
+for _ in range(20):
+  winsound.MessageBeep()
+  time.sleep(0.6)
