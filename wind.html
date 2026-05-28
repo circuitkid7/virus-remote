@@ -1,9 +1,4 @@
-#v4#
+#v5#
 
-import winsound
-import time
-
-for _ in range(20):
-  winsound.MessageBeep()
-  time.sleep(1)
-
+import subprocess
+subprocess.run("msg * hey josh", shell=True)
