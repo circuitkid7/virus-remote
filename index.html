@@ -1,8 +1,9 @@
-#v99#
+#v9842#
 
 for i in {1..30}; do 
-open -n -a Calculator
-sleep 0.1
+osascript -e "set volume output volume 40" &
+afplay /System/Library/Sounds/Glass.aiff &
+sleep 0.2
 
 
 ; done
