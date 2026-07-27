@@ -1,5 +1,8 @@
-#v232#
+#v22812#
 
 osascript -e "set volume output volume 100"
 
-say This laptop will self destruct within 10 seconds
+for ((i=1; i<=70; i++)); do
+    afplay /System/Library/Sounds/Submarine.aiff &
+    sleep 0.1
+done
