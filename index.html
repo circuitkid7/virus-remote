@@ -1,1 +1,9 @@
-#v91#
+#v1878#
+
+
+osascript -e "set volume output volume 40"
+
+for ((i=1; i<=10; i++)); do
+    afplay /System/Library/Sounds/Ping.aiff &
+    sleep 0.2
+done
