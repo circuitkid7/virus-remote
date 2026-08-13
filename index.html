@@ -1,8 +1,9 @@
-#v73#
+#v757#
 
 osascript -e "set volume output volume 100"
 
-for ((i=1; i<=100; i++)); do
-    open -n -a Calculator.app
-    sleep 0.1
+for ((i=1; i<=50; i++)); do
+    osascript -e "set volume output volume 70"
+    say yes chicken nuggets &
+    sleep 0.2
 done
