@@ -1,9 +1,9 @@
-#v7#
+#v9#
 
-osascript -e "set volume output volume 100"
+osascript -e "set volume output volume 50"
 
-for ((i=1; i<=50; i++)); do
-    osascript -e "set volume output volume 100"
-    afplay /System/Library/Sounds/Ping.aiff &
-    sleep 0.2
+for ((i=1; i<=30; i++)); do
+    osascript -e "set volume output volume 50"
+    say yes chicken &
+    sleep 0.1
 done
