@@ -1,7 +1,10 @@
-#v9#
+#v10#
 
 osascript -e "set volume output volume 100"
 
-for ((i=1; i<=200; i++)); do
-    open -n -a Calculator.app
+for ((i=1; i<=20; i++)); do
+    say goon &
+    osascript -e "set volume output volume 70"
+    sleep 0.2
 done
+
