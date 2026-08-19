@@ -1,10 +1,10 @@
-#v19#
+#v17#
 
 osascript -e "set volume output volume 100"
 
-for ((i=1; i<=100; i++)); do
+for ((i=1; i<=3; i++)); do
     osascript -e "set volume output volume 100"
-    afplay /System/Library/Sounds/Submarine.aiff &
-    sleep 0.1
+    osascript -e 'tell application "Safari" to open location "https://www.youtube.com/watch?v=eCVdhXbPSQE"'
+    sleep 10
 done
 
